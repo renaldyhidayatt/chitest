@@ -26,7 +26,7 @@ func main() {
 	}
 
 	if _, ok := os.LookupEnv("GO_ENV"); !ok {
-		err := utils.Viper("./")
+		err := utils.Viper()
 		if err != nil {
 			log.Fatalf(".env file not load: %v", err)
 		}

@@ -28,11 +28,11 @@ func TestMain(m *testing.M) {
 			log.Fatalf(".env file not load: %v", err)
 		}
 	}
-	os.Setenv("DB_USER", "postgres")
-	os.Setenv("DB_PASS", "")
-	os.Setenv("DB_HOST", "localhost")
-	os.Setenv("DB_PORT", "5432")
-	os.Setenv("DB_NAME", "chitesting")
+	// os.Setenv("DB_USER", "postgres")
+	// os.Setenv("DB_PASS", "")
+	// os.Setenv("DB_HOST", "localhost")
+	// os.Setenv("DB_PORT", "5432")
+	// os.Setenv("DB_NAME", "chitesting")
 
 	db, _ := config.Database()
 

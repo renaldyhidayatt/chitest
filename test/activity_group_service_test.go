@@ -17,8 +17,8 @@ func createRandomActivityService(t *testing.T) models.Activity {
 	service := services.NewActivityService(repository)
 
 	data := request.ActivityRequest{
-		Title: "jabufaker.RandomString(20)",
-		Email: "jabufaker.RandomEmail()",
+		Title: "dotitle",
+		Email: "doemail",
 	}
 
 	// Create
